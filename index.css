@@ -1,0 +1,55 @@
+.Head{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    padding-left: 20px;
+}
+
+p{
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+input{
+    height: 70px;
+    width: 500px;
+    font-size: 30px;
+    border: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid black;
+    
+}
+
+.box{
+    justify-content: center;
+    display: flex;
+}
+
+.textArea{
+    height: 150px;
+    border: none;
+    width: 500px;
+    
+    font-size: 25px;
+    
+}
+
+.cards{
+    height: 200px;
+    width: 350px;
+    margin-top: 80px;
+    margin-left: 20px;
+    background-color: antiquewhite;
+}
+
+.CardBox{
+    height: 500px;
+    width: 100%;
+}

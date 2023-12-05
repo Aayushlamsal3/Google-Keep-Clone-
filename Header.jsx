@@ -1,13 +1,17 @@
 import React from "react"
 
-
 const Header=()=>{
     return(
         <>
-        <div className="Head">
-        <img src="https://img.freepik.com/premium-vector/company-logo-business-logo-logo-brand_982550-3.jpg" height="50px" width="50px" alt="" />
-            <p>Notes</p> 
-        </div>
+        
+<div className="head">
+<nav class="navbar navbar-light bg-warning">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-note-sticky"></i>
+          Keep
+      </a>
+    </nav>
+
+</div>
         </>
     )
 }

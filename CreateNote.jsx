@@ -21,6 +21,10 @@ const CreateNote=(props)=>{
 
     const submit=()=>{
         props.PassNote(Datas)
+        SetDatas({
+            inp:"",
+            txt:""
+        })
     }
 
     return(

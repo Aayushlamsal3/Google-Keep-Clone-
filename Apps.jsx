@@ -1,35 +1,35 @@
 import React, { useState } from "react"
+import CreateNote from "./CreateNote";
+import Note from "./Note";
 import Header from "./Header";
-import Main from "./Main";
-import Cards from "./Cards";
-import Footer from "./Footer";
+import Foooter from "./Foooter";
 import "./index.css"
 
 const Apps=()=>{
-    const[addItem,setAddItem]=useState([])
 
-    const addNote=(note)=>{
-        setAddItem((PreValue)=>{
-           return [...PreValue,note] 
+    const[AddItem,SetAddItem]=useState([])
+    const AddNote=(Datas)=>{
+        SetAddItem((PreDatas)=>{
+            return[...PreDatas,Datas]
         })
-
+        console.log(Datas)
     }
+
     return(
         <>
         <Header/>
-        <Main passNote={addNote}/>
-
-       {addItem.map((val,index)=>{
-            return(
-                <Cards
-                key={index}
-                id={index}
-                title={val.title}
-                content={val.content}
-                />
-            )
+        <CreateNote PassNote={AddNote}/>
+     <div className="mainn">
+     {AddItem.map((val,index)=>{
+        return <Note
+        key={index}
+        id={index}
+        title={val.inp}
+        content={val.txt}
+        />
         })}
-        <Footer/>
+     </div>
+        <Foooter/>
         </>
     )
 }

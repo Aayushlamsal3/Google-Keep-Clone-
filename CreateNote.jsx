@@ -30,13 +30,13 @@ const CreateNote=(props)=>{
     return(
         <>
 <div className="real">
-<div className="main">
+   <div className="main">
         <div className="box">
-<input type="text" placeholder="Title" value={Datas.inp} name="inp" id="" onChange={InputEvent} />
+        <input type="text" placeholder="Title" value={Datas.inp} name="inp" id="" onChange={InputEvent} />
         <textarea name="txt" placeholder="Take a Note..." value={Datas.txt} id="" cols="30" rows="10" onChange={InputEvent} ></textarea>
         <button type="button" onClick={submit} class="btn btn-warning">Add</button>
-</div>
         </div>
+   </div>
 </div>
         </>
     )

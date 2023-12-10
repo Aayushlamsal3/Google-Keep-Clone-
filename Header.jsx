@@ -1,3 +1,4 @@
+
 import React from "react"
 
 const Header=()=>{
@@ -6,7 +7,7 @@ const Header=()=>{
         
 <div className="head">
 <nav class="navbar navbar-light bg-warning">
-        <a class="navbar-brand" href="#"><i class="fa-solid fa-note-sticky"></i>
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-google"></i>
           Keep
       </a>
     </nav>

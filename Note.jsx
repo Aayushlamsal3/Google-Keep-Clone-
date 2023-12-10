@@ -1,6 +1,6 @@
 import React from "react"
 
-const Cards=(props)=>{
+const Note=(props)=>{
     return(
         <>
    <div className="CardBox">
@@ -14,4 +14,4 @@ const Cards=(props)=>{
     )
 }
 
-export default Cards;
+export default Note;
